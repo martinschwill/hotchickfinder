@@ -59,6 +59,12 @@
     <Reference Include="Xamarin.GooglePlayServices.Location">
       <HintPath>..\packages\Xamarin.GooglePlayServices.Location.29.0.0.2\lib\MonoAndroid41\Xamarin.GooglePlayServices.Location.dll</HintPath>
     </Reference>
+    <Reference Include="Geolocator.Plugin.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.1.0.3\lib\MonoAndroid10\Geolocator.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Geolocator.Plugin">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.1.0.3\lib\MonoAndroid10\Geolocator.Plugin.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -73,6 +79,7 @@
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
     <None Include="Resources\layout.xml" />
+    <None Include="PluginsHelp\GeolocatorReadme.txt" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -95,6 +102,10 @@
     </XamarinComponentReference>
     <XamarinComponentReference Include="googleplayservices-location">
       <Version>29.0.0.2</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="GeolocatorPlugin">
+      <Version>1.0.3</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

@@ -10,6 +10,8 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Xamarin.GooglePlayServices.Base.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Xamarin.GooglePlayServices.Maps.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Xamarin.GooglePlayServices.Location.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Geolocator.Plugin.Abstractions.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Geolocator.Plugin.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/mscorlib.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Mono.Security.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Net.Http.dll
@@ -25,3 +27,5 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Runtime.Extensions.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Reflection.Extensions.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.ComponentModel.Composition.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Threading.Tasks.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Resources.ResourceManager.dll
