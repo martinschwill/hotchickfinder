@@ -7,9 +7,6 @@ using System.Resources;
 using Android.Gms.Maps.Model;
 using Android.Views;
 using Geolocator.Plugin;
-using Geolocator.Plugin.Abstractions;
-using System.Threading.Tasks;
-using System.Runtime.Remoting.Contexts;
 
 namespace HotChickFinder
 {
@@ -46,8 +43,30 @@ namespace HotChickFinder
 		{
 			mMap = googleMap;
 
-			//get the position of a user
-			WaitForThePosition(mMap); 
+
+			//getting the location of a user 
+			var locator = CrossGeolocator.Current;
+			locator.DesiredAccuracy = 100;
+			var position = await locator.GetPositionAsync(10000);
+			//closing the camera to the current position
+			if (position != null)
+			{
+				LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
+				mMap.AddMarker(new MarkerOptions()
+										   .SetTitle("You")
+										   .SetPosition(myPosition));
+				CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
+				mMap.MoveCamera(camera);
+			}
+			else 
+			{
+				Toast nolocation = Toast.MakeText(this, "Couldn't find location", ToastLength.Short);
+				nolocation.Show();
+			
+			}
+
+
+
 
 			//setup the list of places
 			ListOfPlaces mListOfPlaces = new ListOfPlaces();
@@ -58,16 +77,10 @@ namespace HotChickFinder
 				mMap.AddMarker(place.ToMarkerOptions());
 			}
 
-
+			//update the camera position
 
 			//set adapter for InfoWindow
 			mMap.SetInfoWindowAdapter(this);
-
-
-
-
-
-
 		}
 
 
@@ -86,37 +99,6 @@ namespace HotChickFinder
 
 			return view; 
 		}
-
-
-
-		public async static void WaitForThePosition(GoogleMap mMap)
-		{
-
-			await GivePosition(mMap); 
-		
-		}
-
-		//location method
-		public static async Task<Position> GivePosition(GoogleMap mMap) 
-		{ 
-			//getting the location of a user 
-			var locator = CrossGeolocator.Current;
-			locator.DesiredAccuracy = 100;
-			var position = await locator.GetPositionAsync(30000);
-			return position;
-			//closing the camera to the current position
-			if (position != null)
-			{
-				LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
-				mMap.AddMarker(new MarkerOptions()
-										   .SetTitle("You")
-										   .SetPosition(myPosition));
-				//update the camera position				
-				CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 14);
-				mMap.MoveCamera(camera);
-			}
-
-		} 
 	}
 
 
