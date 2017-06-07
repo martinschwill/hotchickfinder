@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{CF64F284-8850-4DC0-ADD4-E066A0744AF3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../HotChickFinder/MainActivity.cs">
+    <Files>
+      <File FileName="../../../../HotChickFinder/Resources/values/Strings.xml" Line="7" Column="1" NotebookId="1" />
+      <File FileName="../../../../HotChickFinder/Properties/AndroidManifest.xml" Line="14" Column="12" NotebookId="1" />
+      <File FileName="../../../../HotChickFinder/SinglePlace.cs" Line="39" Column="31" NotebookId="1" />
+      <File FileName="../../../../HotChickFinder/ListOfPlaces.cs" Line="9" Column="64" NotebookId="1" />
+    </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="0" Y="0" Width="1680" Height="1024">
+        <Files>
+          <File FileName="../../../../HotChickFinder/MainActivity.cs" Line="6" Column="24" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GeolocatorSample" expanded="True">
+            <Node name="GeolocatorSample.Droid" expanded="True" />
+          </Node>
+          <Node name="HotChickFinder" expanded="True">
+            <Node name="HotChickFinder" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
