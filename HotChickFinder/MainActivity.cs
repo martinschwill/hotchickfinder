@@ -46,7 +46,7 @@ namespace HotChickFinder
 
 			//getting the location of a user 
 			var locator = CrossGeolocator.Current;
-			locator.DesiredAccuracy = 100;
+			locator.DesiredAccuracy = 10;
 			var position = await locator.GetPositionAsync(10000);
 			//closing the camera to the current position
 			if (position != null)
@@ -81,6 +81,19 @@ namespace HotChickFinder
 
 			//set adapter for InfoWindow
 			mMap.SetInfoWindowAdapter(this);
+
+			//if position is changed follow
+			locator.PositionChanged += (sender, e) =>
+			{
+				position = e.Position;
+				LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
+				mMap.AddMarker(new MarkerOptions()
+							   .SetTitle("You")
+							   .SetPosition(myPosition));
+				CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
+				mMap.MoveCamera(camera);
+			};
+
 		}
 
 
