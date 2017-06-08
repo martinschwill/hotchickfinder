@@ -458,6 +458,9 @@ namespace HotChickFinder
 			// aapt resource value: 0x7f090014
 			public const int place_autocomplete_separator = 2131296276;
 			
+			// aapt resource value: 0x7f09000f
+			public const int ratingBar = 2131296271;
+			
 			// aapt resource value: 0x7f090003
 			public const int satellite = 2131296259;
 			
@@ -469,9 +472,6 @@ namespace HotChickFinder
 			
 			// aapt resource value: 0x7f09000e
 			public const int txtAddress = 2131296270;
-			
-			// aapt resource value: 0x7f09000f
-			public const int txtDescription = 2131296271;
 			
 			// aapt resource value: 0x7f09000d
 			public const int txtName = 2131296269;

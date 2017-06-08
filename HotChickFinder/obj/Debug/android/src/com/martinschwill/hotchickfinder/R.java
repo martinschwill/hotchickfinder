@@ -336,11 +336,11 @@ containing a value of this type.
         public static final int place_autocomplete_search_button=0x7f090011;
         public static final int place_autocomplete_search_input=0x7f090012;
         public static final int place_autocomplete_separator=0x7f090014;
+        public static final int ratingBar=0x7f09000f;
         public static final int satellite=0x7f090003;
         public static final int standard=0x7f090006;
         public static final int terrain=0x7f090004;
         public static final int txtAddress=0x7f09000e;
-        public static final int txtDescription=0x7f09000f;
         public static final int txtName=0x7f09000d;
         public static final int wide=0x7f090007;
     }

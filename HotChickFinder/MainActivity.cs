@@ -44,29 +44,6 @@ namespace HotChickFinder
 			mMap = googleMap;
 
 
-			//getting the location of a user 
-			var locator = CrossGeolocator.Current;
-			locator.DesiredAccuracy = 10;
-			var position = await locator.GetPositionAsync(10000);
-			//closing the camera to the current position
-			if (position != null)
-			{
-				LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
-				mMap.AddMarker(new MarkerOptions()
-										   .SetTitle("You")
-										   .SetPosition(myPosition));
-				CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
-				mMap.MoveCamera(camera);
-			}
-			else 
-			{
-				Toast nolocation = Toast.MakeText(this, "Couldn't find location", ToastLength.Short);
-				nolocation.Show();
-			
-			}
-
-
-
 
 			//setup the list of places
 			ListOfPlaces mListOfPlaces = new ListOfPlaces();
@@ -82,6 +59,29 @@ namespace HotChickFinder
 			//set adapter for InfoWindow
 			mMap.SetInfoWindowAdapter(this);
 
+			//getting the location of a user 
+			var locator = CrossGeolocator.Current;
+			locator.DesiredAccuracy = 10;
+						var position = await locator.GetPositionAsync(30000);
+						//closing the camera to the current position
+						if (position != null)
+						{
+							LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
+			mMap.AddMarker(new MarkerOptions()
+													   .SetTitle("You")
+													   .SetPosition(myPosition));
+							CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
+			mMap.MoveCamera(camera);
+						}
+						else 
+						{
+							Toast nolocation = Toast.MakeText(this, "Couldn't find location", ToastLength.Short);
+			nolocation.Show();
+						
+						}
+
+
+
 			//if position is changed follow
 			locator.PositionChanged += (sender, e) =>
 			{
@@ -94,7 +94,10 @@ namespace HotChickFinder
 				mMap.MoveCamera(camera);
 			};
 
+
+
 		}
+
 
 
 		//InfoWindowAdapter Implementation

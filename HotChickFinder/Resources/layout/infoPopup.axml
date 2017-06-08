@@ -35,14 +35,13 @@
             android:id="@+id/txtAddress"
             android:gravity="center"
             android:textColor="#000" />
-        <TextView
-            android:text="Description"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+        <RatingBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10px"
-            android:id="@+id/txtDescription"
+            android:id="@+id/ratingBar"
             android:gravity="center"
-            android:textColor="#000" />
+            android:numStars="5"
+            android:rating="1.2"
+            android:isIndicator="true" />
     </LinearLayout>
 </LinearLayout>

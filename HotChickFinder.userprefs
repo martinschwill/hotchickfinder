@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{21DA5865-E58E-474A-BA99-E2374463F976}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="HotChickFinder/Resources/values/Strings.xml" Line="7" Column="1" />
-      <File FileName="HotChickFinder/SinglePlace.cs" Line="39" Column="31" />
+      <File FileName="HotChickFinder/SinglePlace.cs" Line="39" Column="30" />
       <File FileName="HotChickFinder/ListOfPlaces.cs" Line="9" Column="64" />
-      <File FileName="HotChickFinder/MainActivity.cs" Line="47" Column="37" />
+      <File FileName="HotChickFinder/MainActivity.cs" Line="92" Column="37" />
+      <File FileName="HotChickFinder/MyPopUpAdapter.cs" Line="33" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,5 +14,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HotChickFinder AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.ZH8004T71Q" AndroidDesignerPreferredTheme="Theme.Holo" />
+  <MonoDevelop.Ide.ItemProperties.HotChickFinder AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Phone" AndroidDesignerPreferredTheme="Theme.Holo" />
 </Properties>

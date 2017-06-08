@@ -36,7 +36,7 @@ namespace HotChickFinder
 			var mMarkerOptions = new MarkerOptions()
 				.SetTitle(this.Name)
 				.SetPosition(this.Position)
-				.SetSnippet(this.Address) 
+				.SetSnippet(this.Address)
 				.Draggable(false);
 
 			return mMarkerOptions; 

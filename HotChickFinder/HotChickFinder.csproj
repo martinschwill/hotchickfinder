@@ -72,6 +72,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinglePlace.cs" />
     <Compile Include="ListOfPlaces.cs" />
+    <Compile Include="MyPopUpAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
