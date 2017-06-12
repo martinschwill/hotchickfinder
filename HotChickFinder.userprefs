@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{21DA5865-E58E-474A-BA99-E2374463F976}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/MyPopUpAdapter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/ActivityPlace.cs">
     <Files>
       <File FileName="HotChickFinder/Resources/values/Strings.xml" Line="7" Column="1" />
       <File FileName="HotChickFinder/SinglePlace.cs" Line="39" Column="30" />
       <File FileName="HotChickFinder/ListOfPlaces.cs" Line="9" Column="64" />
       <File FileName="HotChickFinder/MainActivity.cs" Line="92" Column="37" />
       <File FileName="HotChickFinder/MyPopUpAdapter.cs" Line="21" Column="4" />
+      <File FileName="HotChickFinder/ActivityPlace.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

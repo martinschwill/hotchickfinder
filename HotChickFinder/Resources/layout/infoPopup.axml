@@ -10,7 +10,8 @@
         android:layout_height="match_parent"
         android:scaleType="center"
         android:background="@color/place_autocomplete_prediction_secondary_text"
-        android:layout_weight="50" />
+        android:layout_weight="50"
+        android:src="@drawable/common_google_signin_btn_icon_light_normal" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

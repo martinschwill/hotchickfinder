@@ -2,6 +2,10 @@ HotChickFinder.MainActivity, HotChickFinder;md552017f9f5cea3f0822b9ca48f4428903.
 HotChickFinder.MainActivity, HotChickFinder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md552017f9f5cea3f0822b9ca48f4428903.MainActivity
 HotChickFinder.MainActivity;md552017f9f5cea3f0822b9ca48f4428903.MainActivity
 hotchickfinder.MainActivity;md552017f9f5cea3f0822b9ca48f4428903.MainActivity
+HotChickFinder.ActivityPlace, HotChickFinder;md552017f9f5cea3f0822b9ca48f4428903.ActivityPlace
+HotChickFinder.ActivityPlace, HotChickFinder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md552017f9f5cea3f0822b9ca48f4428903.ActivityPlace
+HotChickFinder.ActivityPlace;md552017f9f5cea3f0822b9ca48f4428903.ActivityPlace
+hotchickfinder.ActivityPlace;md552017f9f5cea3f0822b9ca48f4428903.ActivityPlace
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

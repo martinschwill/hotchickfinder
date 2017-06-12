@@ -73,6 +73,7 @@
     <Compile Include="SinglePlace.cs" />
     <Compile Include="ListOfPlaces.cs" />
     <Compile Include="MyPopUpAdapter.cs" />
+    <Compile Include="ActivityPlace.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -92,6 +93,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\layout\infoPopup.axml" />
+    <AndroidResource Include="Resources\layout\PlaceLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />

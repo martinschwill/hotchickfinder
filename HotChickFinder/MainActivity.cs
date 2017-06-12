@@ -7,11 +7,12 @@ using System.Resources;
 using Android.Gms.Maps.Model;
 using Android.Views;
 using Geolocator.Plugin;
+using Android.Content;
 
 namespace HotChickFinder
 {
 	[Activity(Label = "HotChickFinder", MainLauncher = true, Icon = "@mipmap/icon")]
-	public class MainActivity : Activity, IOnMapReadyCallback, GoogleMap.IInfoWindowAdapter
+	public class MainActivity : Activity, IOnMapReadyCallback, GoogleMap.IInfoWindowAdapter, GoogleMap.IOnInfoWindowClickListener
 	{
 
 		private GoogleMap mMap;
@@ -61,8 +62,8 @@ namespace HotChickFinder
 
 			//getting the location of a user 
 			var locator = CrossGeolocator.Current;
-			locator.DesiredAccuracy = 10;
-						var position = await locator.GetPositionAsync(30000);
+			locator.DesiredAccuracy = 100;
+						var position = await locator.GetPositionAsync(60000);
 						//closing the camera to the current position
 						if (position != null)
 						{
@@ -95,7 +96,8 @@ namespace HotChickFinder
 			};
 
 
-
+			//set up the listener for click
+			mMap.SetOnInfoWindowClickListener(this); 
 		}
 
 
@@ -115,6 +117,15 @@ namespace HotChickFinder
 
 			return view; 
 		}
+
+		public void OnInfoWindowClick(Marker marker)
+		{
+			Intent intent = new Intent(this, typeof(ActivityPlace));
+			this.StartActivity(intent); 
+		}
+
+
+
 	}
 
 

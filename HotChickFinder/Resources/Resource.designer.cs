@@ -428,11 +428,17 @@ namespace HotChickFinder
 			// aapt resource value: 0x7f090010
 			public const int map = 2131296272;
 			
+			// aapt resource value: 0x7f09001a
+			public const int nameTextView = 2131296282;
+			
 			// aapt resource value: 0x7f090001
 			public const int none = 2131296257;
 			
 			// aapt resource value: 0x7f090002
 			public const int normal = 2131296258;
+			
+			// aapt resource value: 0x7f090019
+			public const int placeImageView = 2131296281;
 			
 			// aapt resource value: 0x7f090013
 			public const int place_autocomplete_clear_button = 2131296275;
@@ -460,6 +466,9 @@ namespace HotChickFinder
 			
 			// aapt resource value: 0x7f09000f
 			public const int ratingBar = 2131296271;
+			
+			// aapt resource value: 0x7f09001b
+			public const int ratingName = 2131296283;
 			
 			// aapt resource value: 0x7f090003
 			public const int satellite = 2131296259;
@@ -525,6 +534,9 @@ namespace HotChickFinder
 			
 			// aapt resource value: 0x7f040005
 			public const int place_autocomplete_progress = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int PlaceLayout = 2130968582;
 			
 			static Layout()
 			{

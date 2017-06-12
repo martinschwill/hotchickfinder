@@ -24,3 +24,4 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/Xamarin.GooglePlayServices.Location.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/Geolocator.Plugin.Abstractions.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/Geolocator.Plugin.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/res/layout/placelayout.xml
