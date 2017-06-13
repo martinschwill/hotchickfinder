@@ -41,6 +41,7 @@ namespace HotChickFinder
 			}
 
 		}
+
 		public async void OnMapReady(GoogleMap googleMap)
 		{
 			mMap = googleMap;
@@ -58,7 +59,7 @@ namespace HotChickFinder
 				mMap.AddMarker(place.ToMarkerOptions());
 			}
 
-			//update the camera position
+
 
 			//set adapter for InfoWindow
 			mMap.SetInfoWindowAdapter(this);
@@ -77,6 +78,8 @@ namespace HotChickFinder
 													   .SetTitle("You")
 													   .SetPosition(myPosition));
 							CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
+
+			//update the camera position
 			mMap.MoveCamera(camera);
 						}
 						else 
@@ -85,7 +88,6 @@ namespace HotChickFinder
 			nolocation.Show();
 						
 						}
-
 
 
 			//if position is changed follow
@@ -113,17 +115,17 @@ namespace HotChickFinder
 		//InfoWindowAdapter Implementation
 		public View GetInfoContents(Marker marker)
 		{
+			return null; 
+		}
+
+		//InfoWindowAdapter Implementation
+		public View GetInfoWindow(Marker marker)
+		{
 			View view = LayoutInflater.Inflate(Resource.Layout.infoPopup, null, false);
 			view.FindViewById<TextView>(Resource.Id.txtName).Text = marker.Title;
 			view.FindViewById<TextView>(Resource.Id.txtAddress).Text = marker.Snippet;
 
 			return view; 
-		}
-
-
-		public View GetInfoWindow(Marker marker)
-		{
-			return null; 
 		}
 
 
