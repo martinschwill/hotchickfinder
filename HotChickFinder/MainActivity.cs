@@ -8,6 +8,7 @@ using Android.Gms.Maps.Model;
 using Android.Views;
 using Geolocator.Plugin;
 using Android.Content;
+using System.Collections.Generic;
 
 namespace HotChickFinder
 {
@@ -45,6 +46,8 @@ namespace HotChickFinder
 			mMap = googleMap;
 
 
+			//Check if you need Entities in here
+			List<Entity> list = new List<Entity>(); 
 
 			//setup the list of places
 			ListOfPlaces mListOfPlaces = new ListOfPlaces();
@@ -59,6 +62,8 @@ namespace HotChickFinder
 
 			//set adapter for InfoWindow
 			mMap.SetInfoWindowAdapter(this);
+
+
 
 			//getting the location of a user 
 			var locator = CrossGeolocator.Current;
@@ -96,6 +101,9 @@ namespace HotChickFinder
 			};
 
 
+
+
+
 			//set up the listener for click
 			mMap.SetOnInfoWindowClickListener(this); 
 		}
@@ -105,12 +113,6 @@ namespace HotChickFinder
 		//InfoWindowAdapter Implementation
 		public View GetInfoContents(Marker marker)
 		{
-			return null; 
-		}
-
-
-		public View GetInfoWindow(Marker marker)
-		{
 			View view = LayoutInflater.Inflate(Resource.Layout.infoPopup, null, false);
 			view.FindViewById<TextView>(Resource.Id.txtName).Text = marker.Title;
 			view.FindViewById<TextView>(Resource.Id.txtAddress).Text = marker.Snippet;
@@ -118,6 +120,15 @@ namespace HotChickFinder
 			return view; 
 		}
 
+
+		public View GetInfoWindow(Marker marker)
+		{
+			return null; 
+		}
+
+
+
+		// click on the infoWindow
 		public void OnInfoWindowClick(Marker marker)
 		{
 			Intent intent = new Intent(this, typeof(ActivityPlace));

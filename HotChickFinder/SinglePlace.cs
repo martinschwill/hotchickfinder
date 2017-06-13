@@ -1,5 +1,6 @@
 ﻿using System;
 using Android.Gms.Maps.Model;
+using Android.Content;
 namespace HotChickFinder
 {
 	public class SinglePlace
@@ -40,6 +41,16 @@ namespace HotChickFinder
 				.Draggable(false);
 
 			return mMarkerOptions; 
+		}
+
+
+
+
+		public void ToEntity()
+		{
+			
+		
+		
 		}
 	}
 }
