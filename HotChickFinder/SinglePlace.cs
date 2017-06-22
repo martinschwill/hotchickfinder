@@ -1,21 +1,22 @@
 ﻿using System;
 using Android.Gms.Maps.Model;
-using Android.Content;
 namespace HotChickFinder
 {
 	public class SinglePlace
 	{
+		public int SerialNo { get; }
 		public String Name { get; set; }
 		public LatLng Position { get; set; }
 		public String Address { get; set; }
 		public String Description { get; set; }
 		public float Rank1 { get; set; }
 		public float Rank2 { get; set; }
-		public float Rank3 { get; set; } 
+		public float Rank3 { get; set; }
 
 
-		public SinglePlace(string name, LatLng pos, string address, string descr, float rank1, float rank2, float rank3)
+		public SinglePlace(int serial, string name, LatLng pos, string address, string descr, float rank1, float rank2, float rank3)
 		{
+			SerialNo = serial; 
 			Name = name;
 			Position = pos;
 			Address = address;
@@ -46,11 +47,6 @@ namespace HotChickFinder
 
 
 
-		public void ToEntity()
-		{
-			
-		
-		
-		}
+
 	}
 }

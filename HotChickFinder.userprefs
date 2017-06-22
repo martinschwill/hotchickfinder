@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/MainActivity.cs">
     <Files>
       <File FileName="HotChickFinder/Resources/values/Strings.xml" Line="7" Column="1" />
-      <File FileName="HotChickFinder/SinglePlace.cs" Line="26" Column="4" />
+      <File FileName="HotChickFinder/SinglePlace.cs" Line="55" Column="3" />
       <File FileName="HotChickFinder/ListOfPlaces.cs" Line="13" Column="73" />
-      <File FileName="HotChickFinder/MainActivity.cs" Line="122" Column="3" />
-      <File FileName="HotChickFinder/ActivityPlace.cs" Line="23" Column="49" />
+      <File FileName="HotChickFinder/MainActivity.cs" Line="146" Column="36" />
+      <File FileName="HotChickFinder/ActivityPlace.cs" Line="24" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

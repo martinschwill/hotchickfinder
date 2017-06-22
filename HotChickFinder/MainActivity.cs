@@ -139,7 +139,12 @@ namespace HotChickFinder
 		// click on the infoWindow
 		public void OnInfoWindowClick(Marker marker)
 		{
+			//get the place that is picked 
+			var place = mListOfPlaces.myPlaces.Find((SinglePlace obj) => obj.Address.Contains(marker.Snippet));
+			//set the intent
 			Intent intent = new Intent(this, typeof(ActivityPlace));
+			//put the place into the intent 
+			intent.PutExtra("myPlace", place.Address);
 			this.StartActivity(intent); 
 		}
 

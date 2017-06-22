@@ -20,7 +20,25 @@ namespace HotChickFinder
 		{
 			base.OnCreate(savedInstanceState);
 
-			SetContentView(Resource.Layout.PlaceLayout); 
+			var myList = new ListOfPlaces(); 
+
+
+
+			SetContentView(Resource.Layout.PlaceLayout);
+
+
+			//get the place from the intent
+			var i = Intent.GetStringExtra("myPlace") ?? "Data not available";
+			var place = myList.myPlaces.Find((SinglePlace obj) => obj.Address.Contains(i));
+
+
+			//set the values of fields in view from the place 
+			TextView nameView = FindViewById<TextView>(Resource.Id.nameTextView);
+			RatingBar ratingBar = FindViewById<RatingBar>(Resource.Id.ratingBar);
+
+			nameView.Text = place.Name;
+			ratingBar.Rating = place.GetOverallRank(); 
+
 		}
 	}
 }

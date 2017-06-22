@@ -326,8 +326,10 @@ containing a value of this type.
         public static int icon_only=0x7f090005;
         public static int light=0x7f09000a;
         public static int map=0x7f090010;
+        public static int nameTextView=0x7f09001a;
         public static int none=0x7f090001;
         public static int normal=0x7f090002;
+        public static int placeImageView=0x7f090019;
         public static int place_autocomplete_clear_button=0x7f090013;
         public static int place_autocomplete_powered_by_google=0x7f090015;
         public static int place_autocomplete_prediction_primary_text=0x7f090017;
@@ -337,6 +339,7 @@ containing a value of this type.
         public static int place_autocomplete_search_input=0x7f090012;
         public static int place_autocomplete_separator=0x7f090014;
         public static int ratingBar=0x7f09000f;
+        public static int ratingName=0x7f09001b;
         public static int satellite=0x7f090003;
         public static int standard=0x7f090006;
         public static int terrain=0x7f090004;
@@ -354,6 +357,7 @@ containing a value of this type.
         public static int place_autocomplete_item_powered_by_google=0x7f040003;
         public static int place_autocomplete_item_prediction=0x7f040004;
         public static int place_autocomplete_progress=0x7f040005;
+        public static int placelayout=0x7f040006;
     }
     public static final class mipmap {
         public static int icon=0x7f030000;

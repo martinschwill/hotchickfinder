@@ -12,6 +12,7 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/res/mipmap-xxxhdpi/icon.png
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/res/drawable/icon.png
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/res/layout/infopopup.xml
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/res/layout/placelayout.xml
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/R.cs.flag
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/com.martinschwill.hotchickfinder-Signed.apk
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/uploadflags.txt
@@ -24,4 +25,3 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/Xamarin.GooglePlayServices.Location.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/Geolocator.Plugin.Abstractions.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/Geolocator.Plugin.dll
-/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/res/layout/placelayout.xml
