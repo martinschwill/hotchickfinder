@@ -18,7 +18,8 @@ namespace HotChickFinder
 
 		private GoogleMap mMap;
 
-
+		//setup the list of places
+		ListOfPlaces mListOfPlaces = new ListOfPlaces();
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
@@ -50,8 +51,7 @@ namespace HotChickFinder
 			//Check if you need Entities in here
 			List<Entity> list = new List<Entity>(); 
 
-			//setup the list of places
-			ListOfPlaces mListOfPlaces = new ListOfPlaces();
+
 
 			//add markers for places on map
 			foreach (var place in mListOfPlaces.myPlaces)
@@ -118,12 +118,18 @@ namespace HotChickFinder
 			return null; 
 		}
 
+
+
 		//InfoWindowAdapter Implementation
 		public View GetInfoWindow(Marker marker)
 		{
+			
+			var place = mListOfPlaces.myPlaces.Find((SinglePlace obj) => obj.Address.Contains(marker.Snippet));
+
 			View view = LayoutInflater.Inflate(Resource.Layout.infoPopup, null, false);
-			view.FindViewById<TextView>(Resource.Id.txtName).Text = marker.Title;
-			view.FindViewById<TextView>(Resource.Id.txtAddress).Text = marker.Snippet;
+			view.FindViewById<TextView>(Resource.Id.txtName).Text = place.Name;
+			view.FindViewById<TextView>(Resource.Id.txtAddress).Text = place.Address;
+			view.FindViewById<RatingBar>(Resource.Id.ratingBar).Rating = place.GetOverallRank(); 
 
 			return view; 
 		}

@@ -9,12 +9,12 @@ namespace HotChickFinder
 		public LatLng Position { get; set; }
 		public String Address { get; set; }
 		public String Description { get; set; }
-		public double Rank1 { get; set; }
-		public double Rank2 { get; set; }
-		public double Rank3 { get; set; } 
+		public float Rank1 { get; set; }
+		public float Rank2 { get; set; }
+		public float Rank3 { get; set; } 
 
 
-		public SinglePlace(string name, LatLng pos, string address, string descr, double rank1, double rank2, double rank3)
+		public SinglePlace(string name, LatLng pos, string address, string descr, float rank1, float rank2, float rank3)
 		{
 			Name = name;
 			Position = pos;
@@ -26,9 +26,9 @@ namespace HotChickFinder
 		}
 
 
-		public double GetOverallRank()
+		public float GetOverallRank()
 		{
-			double rank = (this.Rank1 + this.Rank2 + this.Rank3) / 3;
+			float rank = (this.Rank1 + this.Rank2 + this.Rank3) / 3;
 			return rank; 	
 		}
 
