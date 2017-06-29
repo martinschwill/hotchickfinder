@@ -23,7 +23,6 @@ namespace HotChickFinder
 			var myList = new ListOfPlaces(); 
 
 
-
 			SetContentView(Resource.Layout.PlaceLayout);
 
 
@@ -34,11 +33,15 @@ namespace HotChickFinder
 
 			//set the values of fields in view from the place 
 			TextView nameView = FindViewById<TextView>(Resource.Id.nameTextView);
-			RatingBar ratingBar = FindViewById<RatingBar>(Resource.Id.ratingBar);
+			RatingBar ratingBarChicks = FindViewById<RatingBar>(Resource.Id.ratingBarChicks);
+			RatingBar ratingBarDrinks = FindViewById<RatingBar>(Resource.Id.ratingBarDrinks);
+			RatingBar ratingBarMusic = FindViewById<RatingBar>(Resource.Id.ratingBarMusic);
+			Button rateButton = FindViewById<Button>(Resource.Id.RateButton); 
 
 			nameView.Text = place.Name;
-			ratingBar.Rating = place.GetOverallRank(); 
-
+			ratingBarChicks.Rating = place.Rank1;
+			ratingBarDrinks.Rating = place.Rank2;
+			ratingBarDrinks.Rating = place.Rank3; 
 		}
 	}
 }

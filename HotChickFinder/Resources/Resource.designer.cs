@@ -404,6 +404,9 @@ namespace HotChickFinder
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f090020
+			public const int RateButton = 2131296288;
+			
 			// aapt resource value: 0x7f09000b
 			public const int adjust_height = 2131296267;
 			
@@ -467,8 +470,20 @@ namespace HotChickFinder
 			// aapt resource value: 0x7f09000f
 			public const int ratingBar = 2131296271;
 			
+			// aapt resource value: 0x7f09001c
+			public const int ratingBarChicks = 2131296284;
+			
+			// aapt resource value: 0x7f09001e
+			public const int ratingBarDrinks = 2131296286;
+			
+			// aapt resource value: 0x7f09001f
+			public const int ratingBarMusic = 2131296287;
+			
 			// aapt resource value: 0x7f09001b
 			public const int ratingName = 2131296283;
+			
+			// aapt resource value: 0x7f09001d
+			public const int ratingName2 = 2131296285;
 			
 			// aapt resource value: 0x7f090003
 			public const int satellite = 2131296259;

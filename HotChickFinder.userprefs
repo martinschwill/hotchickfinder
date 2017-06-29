@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{21DA5865-E58E-474A-BA99-E2374463F976}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/SinglePlace.cs">
     <Files>
       <File FileName="HotChickFinder/Resources/values/Strings.xml" Line="7" Column="1" />
-      <File FileName="HotChickFinder/SinglePlace.cs" Line="55" Column="3" />
-      <File FileName="HotChickFinder/ListOfPlaces.cs" Line="13" Column="73" />
-      <File FileName="HotChickFinder/MainActivity.cs" Line="146" Column="36" />
-      <File FileName="HotChickFinder/ActivityPlace.cs" Line="24" Column="1" />
+      <File FileName="HotChickFinder/SinglePlace.cs" Line="6" Column="3" />
+      <File FileName="HotChickFinder/ListOfPlaces.cs" Line="10" Column="3" />
+      <File FileName="HotChickFinder/MainActivity.cs" Line="66" Column="24" />
+      <File FileName="HotChickFinder/ActivityPlace.cs" Line="44" Column="42" />
+      <File FileName="HotChickFinder/Properties/AndroidManifest.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

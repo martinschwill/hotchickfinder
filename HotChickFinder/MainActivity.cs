@@ -9,6 +9,7 @@ using Android.Views;
 using Geolocator.Plugin;
 using Android.Content;
 using System.Collections.Generic;
+using Geolocator.Plugin.Abstractions;
 
 namespace HotChickFinder
 {
@@ -38,7 +39,6 @@ namespace HotChickFinder
 			if (mMap == null)
 			{
 				FragmentManager.FindFragmentById<MapFragment>(Resource.Id.map).GetMapAsync(this);
-
 			}
 
 		}
@@ -46,12 +46,6 @@ namespace HotChickFinder
 		public async void OnMapReady(GoogleMap googleMap)
 		{
 			mMap = googleMap;
-
-
-			//Check if you need Entities in here
-			List<Entity> list = new List<Entity>(); 
-
-
 
 			//add markers for places on map
 			foreach (var place in mListOfPlaces.myPlaces)
@@ -69,25 +63,25 @@ namespace HotChickFinder
 			//getting the location of a user 
 			var locator = CrossGeolocator.Current;
 			locator.DesiredAccuracy = 100;
-						var position = await locator.GetPositionAsync(60000);
-						//closing the camera to the current position
-						if (position != null)
-						{
-							LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
-			mMap.AddMarker(new MarkerOptions()
-													   .SetTitle("You")
-													   .SetPosition(myPosition));
-							CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
+			var position = await locator.GetPositionAsync(60000);
+			//closing the camera to the current position
+			if (position != null)
+			{
+				LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
+				mMap.AddMarker(new MarkerOptions()
+														   .SetTitle("You")
+														   .SetPosition(myPosition));
+				CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
 
-			//update the camera position
-			mMap.MoveCamera(camera);
-						}
-						else 
-						{
-							Toast nolocation = Toast.MakeText(this, "Couldn't find location", ToastLength.Short);
-			nolocation.Show();
-						
-						}
+				//update the camera position
+				mMap.MoveCamera(camera);
+			}
+			else
+			{
+				Toast nolocation = Toast.MakeText(this, "Couldn't find location", ToastLength.Short);
+				nolocation.Show();
+
+			}
 
 
 			//if position is changed follow
@@ -107,7 +101,7 @@ namespace HotChickFinder
 
 
 			//set up the listener for click
-			mMap.SetOnInfoWindowClickListener(this); 
+			mMap.SetOnInfoWindowClickListener(this);
 		}
 
 
@@ -115,7 +109,7 @@ namespace HotChickFinder
 		//InfoWindowAdapter Implementation
 		public View GetInfoContents(Marker marker)
 		{
-			return null; 
+			return null;
 		}
 
 
@@ -123,15 +117,15 @@ namespace HotChickFinder
 		//InfoWindowAdapter Implementation
 		public View GetInfoWindow(Marker marker)
 		{
-			
+
 			var place = mListOfPlaces.myPlaces.Find((SinglePlace obj) => obj.Address.Contains(marker.Snippet));
 
 			View view = LayoutInflater.Inflate(Resource.Layout.infoPopup, null, false);
 			view.FindViewById<TextView>(Resource.Id.txtName).Text = place.Name;
 			view.FindViewById<TextView>(Resource.Id.txtAddress).Text = place.Address;
-			view.FindViewById<RatingBar>(Resource.Id.ratingBar).Rating = place.GetOverallRank(); 
+			view.FindViewById<RatingBar>(Resource.Id.ratingBar).Rating = place.GetOverallRank();
 
-			return view; 
+			return view;
 		}
 
 
@@ -145,7 +139,7 @@ namespace HotChickFinder
 			Intent intent = new Intent(this, typeof(ActivityPlace));
 			//put the place into the intent 
 			intent.PutExtra("myPlace", place.Address);
-			this.StartActivity(intent); 
+			this.StartActivity(intent);
 		}
 
 
