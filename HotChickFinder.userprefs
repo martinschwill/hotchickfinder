@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/SinglePlace.cs">
     <Files>
       <File FileName="HotChickFinder/Resources/values/Strings.xml" Line="7" Column="1" />
-      <File FileName="HotChickFinder/SinglePlace.cs" Line="6" Column="3" />
+      <File FileName="HotChickFinder/SinglePlace.cs" Line="19" Column="23" />
       <File FileName="HotChickFinder/ListOfPlaces.cs" Line="10" Column="3" />
-      <File FileName="HotChickFinder/MainActivity.cs" Line="66" Column="24" />
+      <File FileName="HotChickFinder/MainActivity.cs" Line="144" Column="3" />
       <File FileName="HotChickFinder/ActivityPlace.cs" Line="44" Column="42" />
       <File FileName="HotChickFinder/Properties/AndroidManifest.xml" Line="1" Column="1" />
     </Files>

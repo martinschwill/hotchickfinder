@@ -143,7 +143,6 @@ namespace HotChickFinder
 		}
 
 
-
 	}
 
 
