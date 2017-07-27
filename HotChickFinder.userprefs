@@ -1,13 +1,24 @@
 ﻿<Properties StartupConfiguration="{21DA5865-E58E-474A-BA99-E2374463F976}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/SinglePlace.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/ListOfPlaces.cs">
     <Files>
-      <File FileName="HotChickFinder/Resources/values/Strings.xml" Line="7" Column="1" />
-      <File FileName="HotChickFinder/SinglePlace.cs" Line="19" Column="23" />
-      <File FileName="HotChickFinder/ListOfPlaces.cs" Line="10" Column="3" />
-      <File FileName="HotChickFinder/MainActivity.cs" Line="144" Column="3" />
+      <File FileName="HotChickFinder/SinglePlace.cs" Line="22" Column="22" />
+      <File FileName="HotChickFinder/ListOfPlaces.cs" Line="3" Column="30" />
+      <File FileName="HotChickFinder/MainActivity.cs" Line="66" Column="8" />
       <File FileName="HotChickFinder/ActivityPlace.cs" Line="44" Column="42" />
       <File FileName="HotChickFinder/Properties/AndroidManifest.xml" Line="1" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HotChickFinder" expanded="True">
+            <Node name="HotChickFinder" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="ListOfPlaces.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -15,5 +26,5 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.HotChickFinder AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Phone" AndroidDesignerPreferredTheme="Theme.Holo" />
+  <MonoDevelop.Ide.ItemProperties.HotChickFinder AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Phone" HideGettingStarted="True" AndroidDesignerPreferredTheme="Theme.Holo" />
 </Properties>

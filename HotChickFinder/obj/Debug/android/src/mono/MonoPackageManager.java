@@ -106,6 +106,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.GooglePlayServices.Location.dll",
 		"Geolocator.Plugin.Abstractions.dll",
 		"Geolocator.Plugin.dll",
+		"MySql.Data.CF.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

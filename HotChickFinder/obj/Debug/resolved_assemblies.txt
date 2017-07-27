@@ -3,6 +3,7 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Xml.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Core.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Mono.Android.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Data.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Java.Interop.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Runtime.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Xamarin.Android.Support.v4.dll
@@ -12,11 +13,15 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Xamarin.GooglePlayServices.Location.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Geolocator.Plugin.Abstractions.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Geolocator.Plugin.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/MySql.Data.CF.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/mscorlib.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Mono.Security.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Net.Http.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Runtime.Serialization.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.ServiceModel.Internals.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Numerics.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Transactions.dll
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/Mono.Data.Tds.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Threading.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Collections.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/android/assets/System.Collections.Concurrent.dll

@@ -1,5 +1,7 @@
 ﻿using System;
 using Android.Gms.Maps.Model;
+using System.Collections.Generic;
+using System.Linq;
 namespace HotChickFinder
 {
 	public class SinglePlace
@@ -9,29 +11,29 @@ namespace HotChickFinder
 		public LatLng Position { get; set; }
 		public String Address { get; set; }
 		public String Description { get; set; }
-		public float Rank1 { get; set; }
-		public float Rank2 { get; set; }
-		public float Rank3 { get; set; }
+		public float RankChcickSum { get; set; } 
+		public int RankChcickCount { get; set; }
+		public float RankAlcoholSum { get; set; }
+		public int RankAlcoholCount { get; set; }
+		public float RankMusicSum { get; set; }
+		public float RankMusicCount { get; set; }
 
 
-		public SinglePlace(int serial, string name, LatLng pos, string address, string descr, float rank1, float rank2, float rank3)
+
+		public SinglePlace(int serial, string name, LatLng pos, string address, string descr)
 		{
 			SerialNo = serial; 
 			Name = name;
 			Position = pos;
 			Address = address;
 			Description = descr;
-			Rank1 = rank1;
-			Rank2 = rank2;
-			Rank3 = rank3; 
+
 		}
 
+		public SinglePlace() { }
 
-		public float GetOverallRank()
-		{
-			float rank = (this.Rank1 + this.Rank2 + this.Rank3) / 3;
-			return rank; 	
-		}
+
+
 
 		public MarkerOptions ToMarkerOptions() 
 		{
@@ -45,7 +47,28 @@ namespace HotChickFinder
 		}
 
 
+		public float GetRankChicks()
+		{
+			float result = RankChcickSum / RankChcickCount;
+			return result; 
+		}
 
+		public float GetRankAlcohol()
+		{
+			float result = RankAlcoholSum / RankAlcoholCount;
+			return result; 
+		}
+		public float GetRankMusic()
+		{
+			float result = RankMusicSum / RankMusicCount;
+			return result; 
+		}
+
+		public float GetOverallRank()
+		{
+			float rank = ((GetRankChicks() + GetRankAlcohol() + GetRankMusic()) / 3); 
+			return rank;
+		}
 
 
 	}
