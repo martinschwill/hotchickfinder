@@ -64,7 +64,7 @@ namespace HotChickFinder
 			var locator = CrossGeolocator.Current;
 			locator.DesiredAccuracy = 100;
 			var position = await locator.GetPositionAsync(60000);
-			//closing the camera to the current position
+			//upclosing the camera to the current position
 			if (position != null)
 			{
 				LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
