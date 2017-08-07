@@ -1,19 +1,5 @@
 ﻿<Properties StartupConfiguration="{21DA5865-E58E-474A-BA99-E2374463F976}|Default" GitUserInfo="UsingGIT">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HotChickFinder/ListOfPlaces.cs">
-    <Files>
-      <File FileName="HotChickFinder/ListOfPlaces.cs" Line="31" Column="45" NotebookId="1" />
-      <File FileName="HotChickFinder/MainActivity.cs" Line="79" Column="6" NotebookId="1" />
-      <File FileName="HotChickFinder/Properties/AndroidManifest.xml" Line="15" Column="12" NotebookId="1" />
-      <File FileName="../../../../Library/Frameworks/Xamarin.Android.framework/Versions/7.3.1-2/lib/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="873" Column="53" NotebookId="1" />
-    </Files>
-    <FloatingWindows>
-      <FloatingWindow WindowId="1" X="0" Y="180" Width="1440" Height="874">
-        <Files>
-          <File FileName="HotChickFinder/SinglePlace.cs" Line="51" Column="31" />
-        </Files>
-      </FloatingWindow>
-    </FloatingWindows>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
