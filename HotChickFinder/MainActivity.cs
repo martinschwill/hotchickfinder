@@ -6,10 +6,10 @@ using System;
 using System.Resources;
 using Android.Gms.Maps.Model;
 using Android.Views;
-using Geolocator.Plugin;
 using Android.Content;
 using System.Collections.Generic;
-using Geolocator.Plugin.Abstractions;
+using Plugin.Geolocator;
+using System.Threading;
 
 namespace HotChickFinder
 {
@@ -61,30 +61,37 @@ namespace HotChickFinder
 
 
 			//getting the location of a user 
-			var locator = CrossGeolocator.Current;
-			locator.DesiredAccuracy = 100;
-			var position = await locator.GetPositionAsync(60000);
-			//upclosing the camera to the current position
-			if (position != null)
-			{
-				LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
-				mMap.AddMarker(new MarkerOptions()
-														   .SetTitle("You")
-														   .SetPosition(myPosition));
-				CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
 
-				//update the camera position
-				mMap.MoveCamera(camera);
-			}
-			else
-			{
-				Toast nolocation = Toast.MakeText(this, "Couldn't find location", ToastLength.Short);
-				nolocation.Show();
 
+			try
+			{
+				var locator = CrossGeolocator.Current;
+				locator.DesiredAccuracy = 50;
+				var cancelSource = new CancellationTokenSource();
+				var position = await locator.GetPositionAsync(); 
+				if (position != null)
+				{
+					LatLng myPosition = new LatLng(position.Latitude, position.Longitude);
+					mMap.AddMarker(new MarkerOptions()
+																			   .SetTitle("You")
+																			   .SetPosition(myPosition));
+					CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(myPosition, 11);
+
+					//update the camera position
+					mMap.MoveCamera(camera);
+				}
 			}
+			catch (Exception ex)
+			{
+				Toast.MakeText(this, "Unable to get location: " + ex.ToString(), ToastLength.Long); 
+			
+			}
+
+
 
 
 			//if position is changed follow
+				/**
 			locator.PositionChanged += (sender, e) =>
 			{
 				position = e.Position;
@@ -96,7 +103,7 @@ namespace HotChickFinder
 				mMap.MoveCamera(camera);
 			};
 
-
+			**/
 
 
 

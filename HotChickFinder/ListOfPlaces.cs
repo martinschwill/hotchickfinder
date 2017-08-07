@@ -5,6 +5,7 @@ using MySql.Data.MySqlClient;
 using System.Data; 
 using Android.Widget;
 using System.Collections;
+using System.ComponentModel;
 
 
 
@@ -15,7 +16,7 @@ namespace HotChickFinder
 
 		public List<SinglePlace> myPlaces = new List<SinglePlace>();
 
-		private string connection = "Server=db4free.net;Port=3306;database=hotchickfinder;User=finder;Password=hotchick;charset=utf8";
+		private string connection = "Server=sql11.freemysqlhosting.net;Port=3306;database=sql11188998;User=sql11188998;Password=fmdAHMAgS4;charset=utf8";
 
 		private string getDataQuery = "SELECT * FROM SinglePlace";  
 
@@ -29,48 +30,45 @@ namespace HotChickFinder
 
 				if (con.State == ConnectionState.Closed)
 				{
-					con.Open();
+					//setting up the connection with the DATABASE and retreiving information
+					MySqlDataAdapter adptr = new MySqlDataAdapter(getDataQuery, con);
+					adptr.SelectCommand.CommandType = CommandType.Text;
+					DataTable myTable = new DataTable();
+					adptr.Fill(myTable);
 
-					MySqlCommand cmd = new MySqlCommand(getDataQuery, con);
 
-					MySqlDataReader reader = cmd.ExecuteReader();
-
-					while (reader.Read())
+					//Filling the local List<SinglePlace> with places
+					foreach (DataRow dr in myTable.Rows) 
 					{
-						for (int i = 0; i < reader.FieldCount; i++)
-						{
-							
-						
-						}
+						myPlaces.Add(new SinglePlace(Convert.ToInt32(dr["SERIAL_NO"]), dr["NAME"].ToString(),
+													 new LatLng(Convert.ToDouble(dr["POS_LAT"]), Convert.ToDouble(dr["POS_LNG"])),
+													 dr["ADDRESS"].ToString(), dr["DESCR"].ToString(),
+						             Convert.ToSingle(dr["RANK_CHICK_SUM"]), 
+						                 Convert.ToSingle(dr["RANK_ALC_SUM"]), 
+						                             Convert.ToSingle(dr["RANK_MUSIC_SUM"]), Convert.ToInt32(dr["RANK_COUNT"]) ));
+						                                                              
+						                                                                                                 
 					
 					}
+
 
 
 				}
 
 
 			}
-			catch (MySqlException ex)
-			{
-
-			}
+			catch (Exception ex)
+            {
+                Console.WriteLine("{oops - {0}", ex.Message);
+            }
 
 			finally
 			{ 
-				con.Close(); 
+				con.Dispose(); 
 			}
 
 		}
 
 
-
-		/**
-		public ListOfPlaces()
-		{
-			myPlaces.Add(new SinglePlace(1,"Galeria Bałtycka", new LatLng(54.382901, 18.600481), "Al. Grunwaldzka", "Galeria Chicko", 5.5f, 1.5f, 1.5f));   
-			myPlaces.Add(new SinglePlace(2,"Żak", new LatLng(54.386994, 18.592035), "Braci Lewoniewskich 2a", "Party", 4.0f, 0.0f, 4.5f));
-			myPlaces.Add(new SinglePlace(3,"Garnizon", new LatLng(54.384562, 18.590887), "Słonimskiego 3", "Party ON!", 1.0f, 0.0f, 0.0f));
-		}
-		**/
 	}
 }

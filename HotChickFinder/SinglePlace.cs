@@ -12,22 +12,23 @@ namespace HotChickFinder
 		public String Address { get; set; }
 		public String Description { get; set; }
 		public float RankChcickSum { get; set; } 
-		public int RankChcickCount { get; set; }
 		public float RankAlcoholSum { get; set; }
-		public int RankAlcoholCount { get; set; }
 		public float RankMusicSum { get; set; }
-		public float RankMusicCount { get; set; }
+		public int RankCount { get; set; }
 
 
 
-		public SinglePlace(int serial, string name, LatLng pos, string address, string descr)
+		public SinglePlace(int serial, string name, LatLng pos, string address, string descr, float rnChickSum, float rnAlcSum, float rnMusicSum, int rnCount)
 		{
 			SerialNo = serial; 
 			Name = name;
 			Position = pos;
 			Address = address;
 			Description = descr;
-
+			RankChcickSum = rnChickSum;
+			RankAlcoholSum = rnAlcSum;
+			RankMusicSum = rnMusicSum;
+			RankCount = rnCount; 
 		}
 
 		public SinglePlace() { }
@@ -49,19 +50,32 @@ namespace HotChickFinder
 
 		public float GetRankChicks()
 		{
-			float result = RankChcickSum / RankChcickCount;
-			return result; 
+			if (RankCount > 0)
+			{
+				float result = RankChcickSum / RankCount;
+				return result;
+			}
+			else return 0; 
+
 		}
 
 		public float GetRankAlcohol()
 		{
-			float result = RankAlcoholSum / RankAlcoholCount;
-			return result; 
+			if (RankCount > 0)
+			{
+				float result = RankAlcoholSum / RankCount;
+				return result;
+			}
+			else return 0; 
 		}
 		public float GetRankMusic()
 		{
-			float result = RankMusicSum / RankMusicCount;
-			return result; 
+			if (RankCount > 0)
+			{
+				float result = RankMusicSum / RankCount;
+				return result;
+			}
+			else return 0; 
 		}
 
 		public float GetOverallRank()

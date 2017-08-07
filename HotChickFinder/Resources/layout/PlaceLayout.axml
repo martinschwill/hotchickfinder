@@ -33,7 +33,7 @@
         android:gravity="center"
         android:numStars="5"
         android:rating="1.2"
-        android:isIndicator="true" />
+        android:isIndicator="false" />
     <TextView
         android:id="@+id/ratingName2"
         android:text="Drinks"
@@ -50,7 +50,7 @@
         android:gravity="center"
         android:numStars="5"
         android:rating="1.2"
-        android:isIndicator="true" />
+        android:isIndicator="false" />
     <TextView
         android:id="@+id/ratingName2"
         android:text="Music"
@@ -67,7 +67,7 @@
         android:gravity="center"
         android:numStars="5"
         android:rating="1.2"
-        android:isIndicator="true" />
+        android:isIndicator="false" />
     <Button
         android:layout_width="120dp"
         android:layout_height="wrap_content"
