@@ -59,7 +59,7 @@ namespace HotChickFinder
 			mMap.SetInfoWindowAdapter(this);
 
 
-
+			/**
 			//getting the location of a user 
 			var locator = CrossGeolocator.Current;
 			locator.DesiredAccuracy = 100;
@@ -96,7 +96,7 @@ namespace HotChickFinder
 				mMap.MoveCamera(camera);
 			};
 
-
+            **/
 
 
 

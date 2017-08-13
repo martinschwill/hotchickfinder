@@ -15,7 +15,7 @@ namespace HotChickFinder
 
 		public List<SinglePlace> myPlaces = new List<SinglePlace>();
 
-		private string connection = "Server=db4free.net;Port=3306;database=hotchickfinder;User=finder;Password=hotchick;charset=utf8";
+		private string connection = "Server=sql11.freemysqlhosting.net;Port=3306;database=sql11188998;User=sql11188998;Password=fmdAHMAgS4;charset=utf8";
 
 		private string getDataQuery = "SELECT * FROM SinglePlace";  
 
@@ -29,22 +29,20 @@ namespace HotChickFinder
 
 				if (con.State == ConnectionState.Closed)
 				{
-					con.Open();
 
-					MySqlCommand cmd = new MySqlCommand(getDataQuery, con);
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(getDataQuery, con);
 
-					MySqlDataReader reader = cmd.ExecuteReader();
+                    adapter.SelectCommand.CommandType = CommandType.Text; 
 
-					while (reader.Read())
-					{
-						for (int i = 0; i < reader.FieldCount; i++)
-						{
-							
-						
-						}
-					
-					}
+                    DataTable ds = new DataTable();
 
+                    adapter.Fill(ds);
+
+                    foreach(DataRow row in ds.Rows){
+                        myPlaces.Add(new SinglePlace((int)row["SERIAL_NO"], row["NAME"].ToString(), new LatLng((double)row["POS_LAT"], (double)row["POS_LNG"]), row["ADDRESS"].ToString(),
+                                                     row["DESCR"].ToString(), (float)row["RANK_CHICK_SUM"], (float)row["RANK_ALC_SUM"],
+                                                     (float)row["RANK_MUSIC_SUM"], (int)row["RANK_COUNT"])); 
+                    }
 
 				}
 
@@ -52,25 +50,17 @@ namespace HotChickFinder
 			}
 			catch (MySqlException ex)
 			{
-
+                Console.WriteLine("{oops - {0}", ex.Message); 
 			}
-
-			finally
-			{ 
-				con.Close(); 
-			}
+            finally
+            {
+                con.Dispose(); 
+            }
 
 		}
 
 
 
-		/**
-		public ListOfPlaces()
-		{
-			myPlaces.Add(new SinglePlace(1,"Galeria Bałtycka", new LatLng(54.382901, 18.600481), "Al. Grunwaldzka", "Galeria Chicko", 5.5f, 1.5f, 1.5f));   
-			myPlaces.Add(new SinglePlace(2,"Żak", new LatLng(54.386994, 18.592035), "Braci Lewoniewskich 2a", "Party", 4.0f, 0.0f, 4.5f));
-			myPlaces.Add(new SinglePlace(3,"Garnizon", new LatLng(54.384562, 18.590887), "Słonimskiego 3", "Party ON!", 1.0f, 0.0f, 0.0f));
-		}
-		**/
+		
 	}
 }

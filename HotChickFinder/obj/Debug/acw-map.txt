@@ -6,6 +6,14 @@ HotChickFinder.ActivityPlace, HotChickFinder;md552017f9f5cea3f0822b9ca48f4428903
 HotChickFinder.ActivityPlace, HotChickFinder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md552017f9f5cea3f0822b9ca48f4428903.ActivityPlace
 HotChickFinder.ActivityPlace;md552017f9f5cea3f0822b9ca48f4428903.ActivityPlace
 hotchickfinder.ActivityPlace;md552017f9f5cea3f0822b9ca48f4428903.ActivityPlace
+Geolocator.Plugin.GeolocationContinuousListener, Geolocator.Plugin;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
+Geolocator.Plugin.GeolocationContinuousListener, Geolocator.Plugin, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
+Geolocator.Plugin.GeolocationContinuousListener;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
+geolocator.plugin.GeolocationContinuousListener;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
+Geolocator.Plugin.GeolocationSingleListener, Geolocator.Plugin;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener
+Geolocator.Plugin.GeolocationSingleListener, Geolocator.Plugin, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener
+Geolocator.Plugin.GeolocationSingleListener;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener
+geolocator.plugin.GeolocationSingleListener;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager+IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
@@ -70,6 +78,10 @@ Android.Support.V4.Widget.SlidingPaneLayout/IPanelSlideListenerImplementor, Xama
 Android.Support.V4.Widget.SlidingPaneLayout+IPanelSlideListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor
 Android.Support.V4.Widget.SlidingPaneLayout.IPanelSlideListenerImplementor;mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor
 mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor;mono.android.support.v4.widget.SlidingPaneLayout_PanelSlideListenerImplementor
+Android.Gms.Common.Images.ImageManager/IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Common.Images.ImageManager.IOnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
 Android.Gms.Common.Apis.ResultCallback`1, Xamarin.GooglePlayServices.Basement;md531f8cc8d4d39b2fa02686ee0eb368905.ResultCallback_1
 Android.Gms.Common.Apis.ResultCallback`1, Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md531f8cc8d4d39b2fa02686ee0eb368905.ResultCallback_1
 Android.Gms.Common.Apis.ResultCallback`1;md531f8cc8d4d39b2fa02686ee0eb368905.ResultCallback_1
@@ -94,10 +106,18 @@ Android.Gms.Security.ProviderInstaller/IProviderInstallListenerImplementor, Xama
 Android.Gms.Security.ProviderInstaller+IProviderInstallListenerImplementor, Xamarin.GooglePlayServices.Basement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
 Android.Gms.Security.ProviderInstaller.IProviderInstallListenerImplementor;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
 mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor;mono.com.google.android.gms.security.ProviderInstaller_ProviderInstallListenerImplementor
-Android.Gms.Common.Images.ImageManager/IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
-Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
-Android.Gms.Common.Images.ImageManager.IOnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
-mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
+Android.Gms.Location.LocationListener, Xamarin.GooglePlayServices.Location;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+Android.Gms.Location.LocationListener, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+Android.Gms.Location.LocationListener;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+android.gms.location.LocationListener;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
+Android.Gms.Location.ILocationListenerImplementor, Xamarin.GooglePlayServices.Location;mono.com.google.android.gms.location.LocationListenerImplementor
+Android.Gms.Location.ILocationListenerImplementor, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.location.LocationListenerImplementor
+Android.Gms.Location.ILocationListenerImplementor;mono.com.google.android.gms.location.LocationListenerImplementor
+mono.com.google.android.gms.location.LocationListenerImplementor;mono.com.google.android.gms.location.LocationListenerImplementor
+Android.Gms.Location.Places.UI.IPlaceSelectionListenerImplementor, Xamarin.GooglePlayServices.Location;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
+Android.Gms.Location.Places.UI.IPlaceSelectionListenerImplementor, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
+Android.Gms.Location.Places.UI.IPlaceSelectionListenerImplementor;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
+mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
 Android.Gms.Maps.GoogleMap/IOnCameraChangeListenerImplementor, Xamarin.GooglePlayServices.Maps;mono.com.google.android.gms.maps.GoogleMap_OnCameraChangeListenerImplementor
 Android.Gms.Maps.GoogleMap+IOnCameraChangeListenerImplementor, Xamarin.GooglePlayServices.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.maps.GoogleMap_OnCameraChangeListenerImplementor
 Android.Gms.Maps.GoogleMap.IOnCameraChangeListenerImplementor;mono.com.google.android.gms.maps.GoogleMap_OnCameraChangeListenerImplementor
@@ -174,23 +194,3 @@ Android.Gms.Maps.StreetViewPanorama/IOnStreetViewPanoramaLongClickListenerImplem
 Android.Gms.Maps.StreetViewPanorama+IOnStreetViewPanoramaLongClickListenerImplementor, Xamarin.GooglePlayServices.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor
 Android.Gms.Maps.StreetViewPanorama.IOnStreetViewPanoramaLongClickListenerImplementor;mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor
 mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor;mono.com.google.android.gms.maps.StreetViewPanorama_OnStreetViewPanoramaLongClickListenerImplementor
-Android.Gms.Location.LocationListener, Xamarin.GooglePlayServices.Location;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
-Android.Gms.Location.LocationListener, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
-Android.Gms.Location.LocationListener;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
-android.gms.location.LocationListener;md5c3f794aca97c55dc0e6d5992e563f700.LocationListener
-Android.Gms.Location.ILocationListenerImplementor, Xamarin.GooglePlayServices.Location;mono.com.google.android.gms.location.LocationListenerImplementor
-Android.Gms.Location.ILocationListenerImplementor, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.location.LocationListenerImplementor
-Android.Gms.Location.ILocationListenerImplementor;mono.com.google.android.gms.location.LocationListenerImplementor
-mono.com.google.android.gms.location.LocationListenerImplementor;mono.com.google.android.gms.location.LocationListenerImplementor
-Android.Gms.Location.Places.UI.IPlaceSelectionListenerImplementor, Xamarin.GooglePlayServices.Location;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
-Android.Gms.Location.Places.UI.IPlaceSelectionListenerImplementor, Xamarin.GooglePlayServices.Location, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
-Android.Gms.Location.Places.UI.IPlaceSelectionListenerImplementor;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
-mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor;mono.com.google.android.gms.location.places.ui.PlaceSelectionListenerImplementor
-Geolocator.Plugin.GeolocationContinuousListener, Geolocator.Plugin;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
-Geolocator.Plugin.GeolocationContinuousListener, Geolocator.Plugin, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
-Geolocator.Plugin.GeolocationContinuousListener;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
-geolocator.plugin.GeolocationContinuousListener;md59c430e9be740b385e2c520c39343ac56.GeolocationContinuousListener
-Geolocator.Plugin.GeolocationSingleListener, Geolocator.Plugin;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener
-Geolocator.Plugin.GeolocationSingleListener, Geolocator.Plugin, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener
-Geolocator.Plugin.GeolocationSingleListener;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener
-geolocator.plugin.GeolocationSingleListener;md59c430e9be740b385e2c520c39343ac56.GeolocationSingleListener

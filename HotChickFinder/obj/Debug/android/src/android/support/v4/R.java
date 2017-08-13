@@ -30,7 +30,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static int buttonSize=0x7f010011;
+        public static int buttonSize=0x7f010014;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -81,7 +81,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static int circleCrop=0x7f010016;
+        public static int circleCrop=0x7f010013;
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be one of the following constant values.</p>
@@ -95,7 +95,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>auto</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static int colorScheme=0x7f010012;
+        public static int colorScheme=0x7f010015;
         /** 
         The fixed aspect ratio to use in aspect ratio adjustments.
         
@@ -106,7 +106,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static int imageAspectRatio=0x7f010015;
+        public static int imageAspectRatio=0x7f010012;
         /** 
         What kind of aspect ratio adjustment to do.  It must be one of "none", "adjust_width",
         or "adjust_height".
@@ -122,7 +122,7 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static int imageAspectRatioAdjust=0x7f010014;
+        public static int imageAspectRatioAdjust=0x7f010011;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -149,7 +149,7 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
          */
-        public static int scopeUris=0x7f010013;
+        public static int scopeUris=0x7f010016;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -319,13 +319,13 @@ containing a value of this type.
     }
     public static final class id {
         public static int RateButton=0x7f090020;
-        public static int adjust_height=0x7f09000b;
-        public static int adjust_width=0x7f09000c;
-        public static int auto=0x7f090008;
-        public static int dark=0x7f090009;
+        public static int adjust_height=0x7f090005;
+        public static int adjust_width=0x7f090006;
+        public static int auto=0x7f09000a;
+        public static int dark=0x7f09000b;
         public static int hybrid=0x7f090000;
-        public static int icon_only=0x7f090005;
-        public static int light=0x7f09000a;
+        public static int icon_only=0x7f090007;
+        public static int light=0x7f09000c;
         public static int map=0x7f090010;
         public static int nameTextView=0x7f09001a;
         public static int none=0x7f090001;
@@ -346,11 +346,11 @@ containing a value of this type.
         public static int ratingName=0x7f09001b;
         public static int ratingName2=0x7f09001d;
         public static int satellite=0x7f090003;
-        public static int standard=0x7f090006;
+        public static int standard=0x7f090008;
         public static int terrain=0x7f090004;
         public static int txtAddress=0x7f09000e;
         public static int txtName=0x7f09000d;
-        public static int wide=0x7f090007;
+        public static int wide=0x7f090009;
     }
     public static final class integer {
         public static int google_play_services_version=0x7f080000;
@@ -371,110 +371,110 @@ containing a value of this type.
         public static int app_name=0x7f070022;
         /**  Brand name for Facebook [DO NOT TRANSLATE] 
          */
-        public static int auth_google_play_services_client_facebook_display_name=0x7f07001f;
+        public static int auth_google_play_services_client_facebook_display_name=0x7f070003;
         /**  Brand name for Google [DO NOT TRANSLATE] 
          */
-        public static int auth_google_play_services_client_google_display_name=0x7f07001e;
+        public static int auth_google_play_services_client_google_display_name=0x7f070002;
         /**  Message in confirmation dialog informing the user that one of the APIs they attepmt to access is not available. [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_api_unavailable_text=0x7f070017;
+        public static int common_google_play_services_api_unavailable_text=0x7f07001a;
         /**  Button in confirmation dialog to enable Google Play services.  Clicking it
         will direct user to application settings of Google Play services where they
         can enable it [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_enable_button=0x7f070009;
+        public static int common_google_play_services_enable_button=0x7f07000c;
         /**  Message in confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_enable_text=0x7f070008;
+        public static int common_google_play_services_enable_text=0x7f07000b;
         /**  Title of confirmation dialog informing user they need to enable
         Google Play services in application settings [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_enable_title=0x7f070007;
+        public static int common_google_play_services_enable_title=0x7f07000a;
         /**  Button in confirmation dialog for installing Google Play services [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_install_button=0x7f070006;
+        public static int common_google_play_services_install_button=0x7f070009;
         /**  (For phones) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_install_text_phone=0x7f070004;
+        public static int common_google_play_services_install_text_phone=0x7f070007;
         /**  (For tablets) Message in confirmation dialog informing user that
         they need to install Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_install_text_tablet=0x7f070005;
+        public static int common_google_play_services_install_text_tablet=0x7f070008;
         /**  Title of confirmation dialog informing user that they need to install
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_install_title=0x7f070003;
+        public static int common_google_play_services_install_title=0x7f070006;
         /**  Message in confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_invalid_account_text=0x7f070012;
+        public static int common_google_play_services_invalid_account_text=0x7f070015;
         /**  Title of confirmation dialog informing the user that they provided an invalid account. [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_invalid_account_title=0x7f070011;
+        public static int common_google_play_services_invalid_account_title=0x7f070014;
         /**  Message in confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_network_error_text=0x7f070010;
+        public static int common_google_play_services_network_error_text=0x7f070013;
         /**  Title of confirmation dialog informing the user that a network error occurred. [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_network_error_title=0x7f07000f;
+        public static int common_google_play_services_network_error_title=0x7f070012;
         /**   Title for notification shown when GooglePlayServices is unavailable [CHAR LIMIT=42] 
          */
-        public static int common_google_play_services_notification_ticker=0x7f070002;
+        public static int common_google_play_services_notification_ticker=0x7f070005;
         /**  Message in confirmation dialog informing the user that their user profile could not use authenticated features. [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_restricted_profile_text=0x7f07001b;
+        public static int common_google_play_services_restricted_profile_text=0x7f07001e;
         /**  Title of confirmation dialog informing the user that their user profile could not use authenticated features. [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_restricted_profile_title=0x7f07001a;
+        public static int common_google_play_services_restricted_profile_title=0x7f07001d;
         /**  Message in confirmation dialog informing the user that the account could not be signed in. [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_sign_in_failed_text=0x7f070019;
+        public static int common_google_play_services_sign_in_failed_text=0x7f07001c;
         /**  Title of confirmation dialog informing the user that the account could not be signed in. [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_sign_in_failed_title=0x7f070018;
+        public static int common_google_play_services_sign_in_failed_title=0x7f07001b;
         /**  Message in confirmation dialog informing user there is an unknown issue in Google Play
         services [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_unknown_issue=0x7f070020;
+        public static int common_google_play_services_unknown_issue=0x7f070004;
         /**  Message in confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_unsupported_text=0x7f070014;
+        public static int common_google_play_services_unsupported_text=0x7f070017;
         /**  Title of confirmation dialog informing user that Google Play services is not supported on their device [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_unsupported_title=0x7f070013;
+        public static int common_google_play_services_unsupported_title=0x7f070016;
         /**  Button in confirmation dialog for updating Google Play services [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_update_button=0x7f070015;
+        public static int common_google_play_services_update_button=0x7f070018;
         /**  Message in confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_update_text=0x7f07000b;
+        public static int common_google_play_services_update_text=0x7f07000e;
         /**  Title of confirmation dialog informing user that they need to update
         Google Play services (from Play Store) [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_update_title=0x7f07000a;
+        public static int common_google_play_services_update_title=0x7f07000d;
         /**  Message in confirmation dialog informing user that Google Play services is currently
         updating [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_updating_text=0x7f07000e;
+        public static int common_google_play_services_updating_text=0x7f070011;
         /**  Title of confirmation dialog informing user that Google Play services is currently
         updating [CHAR LIMIT=40] 
          */
-        public static int common_google_play_services_updating_title=0x7f07000d;
+        public static int common_google_play_services_updating_title=0x7f070010;
         /**  Message in confirmation dialog informing user that their wearable devices'
         Google Play services is not up-to-date and will be auto updated. [CHAR LIMIT=NONE] 
          */
-        public static int common_google_play_services_wear_update_text=0x7f07000c;
+        public static int common_google_play_services_wear_update_text=0x7f07000f;
         /**  Label for an action to open a notifications content on the phone [CHAR LIMIT=25] 
          */
-        public static int common_open_on_phone=0x7f070016;
+        public static int common_open_on_phone=0x7f070019;
         /**  Sign-in button text [CHAR LIMIT=15] 
          */
-        public static int common_signin_button_text=0x7f07001c;
+        public static int common_signin_button_text=0x7f07001f;
         /**  Long form sign-in button text [CHAR LIMIT=30] 
          */
-        public static int common_signin_button_text_long=0x7f07001d;
+        public static int common_signin_button_text_long=0x7f070020;
         public static int google_maps_key=0x7f070023;
         public static int hello=0x7f070021;
         /**  Description of the button that clears the search input when searching for places. 
@@ -504,7 +504,7 @@ containing a value of this type.
            @see #LoadingImageView_imageAspectRatioAdjust
          */
         public static final int[] LoadingImageView = {
-            0x7f010014, 0x7f010015, 0x7f010016
+            0x7f010011, 0x7f010012, 0x7f010013
         };
         /**
           <p>
@@ -877,7 +877,7 @@ containing a value of this type.
            @see #SignInButton_scopeUris
          */
         public static final int[] SignInButton = {
-            0x7f010011, 0x7f010012, 0x7f010013
+            0x7f010014, 0x7f010015, 0x7f010016
         };
         /**
           <p>This symbol is the offset where the {@link android.support.v4.R.attr#buttonSize}

@@ -99,14 +99,20 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "HotChickFinder.dll" comes first in this list. */
 		"HotChickFinder.dll",
-		"Xamarin.Android.Support.v4.dll",
-		"Xamarin.GooglePlayServices.Basement.dll",
-		"Xamarin.GooglePlayServices.Base.dll",
-		"Xamarin.GooglePlayServices.Maps.dll",
-		"Xamarin.GooglePlayServices.Location.dll",
 		"Geolocator.Plugin.Abstractions.dll",
 		"Geolocator.Plugin.dll",
 		"MySql.Data.CF.dll",
+		"SQLite-net.dll",
+		"SQLitePCLRaw.batteries_green.dll",
+		"SQLitePCLRaw.batteries_v2.dll",
+		"SQLitePCLRaw.core.dll",
+		"SQLitePCLRaw.lib.e_sqlite3.dll",
+		"SQLitePCLRaw.provider.e_sqlite3.dll",
+		"Xamarin.Android.Support.v4.dll",
+		"Xamarin.GooglePlayServices.Base.dll",
+		"Xamarin.GooglePlayServices.Basement.dll",
+		"Xamarin.GooglePlayServices.Location.dll",
+		"Xamarin.GooglePlayServices.Maps.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

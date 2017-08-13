@@ -39,9 +39,9 @@ namespace HotChickFinder
 			Button rateButton = FindViewById<Button>(Resource.Id.RateButton); 
 
 			nameView.Text = place.Name;
-			ratingBarChicks.Rating = place.Rank1;
-			ratingBarDrinks.Rating = place.Rank2;
-			ratingBarDrinks.Rating = place.Rank3; 
+            ratingBarChicks.Rating = place.GetRankChicks();
+            ratingBarDrinks.Rating = place.GetRankAlcohol();
+            ratingBarMusic.Rating = place.GetRankMusic(); 
 		}
 	}
 }
