@@ -318,11 +318,12 @@ containing a value of this type.
         public static int powered_by_google_light=0x7f02002e;
     }
     public static final class id {
-        public static int RateButton=0x7f090020;
+        public static int RateButton=0x7f090021;
         public static int adjust_height=0x7f090005;
         public static int adjust_width=0x7f090006;
         public static int auto=0x7f09000a;
         public static int dark=0x7f09000b;
+        public static int descrTextView=0x7f09001b;
         public static int hybrid=0x7f090000;
         public static int icon_only=0x7f090007;
         public static int light=0x7f09000c;
@@ -340,11 +341,11 @@ containing a value of this type.
         public static int place_autocomplete_search_input=0x7f090012;
         public static int place_autocomplete_separator=0x7f090014;
         public static int ratingBar=0x7f09000f;
-        public static int ratingBarChicks=0x7f09001c;
-        public static int ratingBarDrinks=0x7f09001e;
-        public static int ratingBarMusic=0x7f09001f;
-        public static int ratingName=0x7f09001b;
-        public static int ratingName2=0x7f09001d;
+        public static int ratingBarChicks=0x7f09001d;
+        public static int ratingBarDrinks=0x7f09001f;
+        public static int ratingBarMusic=0x7f090020;
+        public static int ratingName=0x7f09001c;
+        public static int ratingName2=0x7f09001e;
         public static int satellite=0x7f090003;
         public static int standard=0x7f090008;
         public static int terrain=0x7f090004;

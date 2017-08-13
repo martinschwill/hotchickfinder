@@ -10,10 +10,12 @@ using System.Collections;
 
 namespace HotChickFinder
 {
-	public class ListOfPlaces
-	{
+    public class ListOfPlaces
+    {
 
-		public List<SinglePlace> myPlaces = new List<SinglePlace>();
+        public List<SinglePlace> myPlaces = new List<SinglePlace>();
+
+        public DataTable mDataTable = new DataTable(); 
 
 		private string connection = "Server=sql11.freemysqlhosting.net;Port=3306;database=sql11188998;User=sql11188998;Password=fmdAHMAgS4;charset=utf8";
 
@@ -34,11 +36,11 @@ namespace HotChickFinder
 
                     adapter.SelectCommand.CommandType = CommandType.Text; 
 
-                    DataTable ds = new DataTable();
 
-                    adapter.Fill(ds);
 
-                    foreach(DataRow row in ds.Rows){
+                    adapter.Fill(mDataTable);
+
+                    foreach(DataRow row in mDataTable.Rows){
                         myPlaces.Add(new SinglePlace((int)row["SERIAL_NO"], row["NAME"].ToString(), new LatLng((double)row["POS_LAT"], (double)row["POS_LNG"]), row["ADDRESS"].ToString(),
                                                      row["DESCR"].ToString(), (float)row["RANK_CHICK_SUM"], (float)row["RANK_ALC_SUM"],
                                                      (float)row["RANK_MUSIC_SUM"], (int)row["RANK_COUNT"])); 
@@ -50,7 +52,7 @@ namespace HotChickFinder
 			}
 			catch (MySqlException ex)
 			{
-                Console.WriteLine("{oops - {0}", ex.Message); 
+                Console.WriteLine("oops - {0}", ex.Message); 
 			}
             finally
             {
@@ -59,7 +61,10 @@ namespace HotChickFinder
 
 		}
 
-
+        public void UpdateMDataTable()
+        {
+            // update of DataTable code to update the DataBase 
+        }
 
 		
 	}

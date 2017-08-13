@@ -16,7 +16,17 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="18dp"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp" />
+    <TextView
+        android:id="@+id/descrTextView"
+        android:text="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp" />
     <TextView
         android:id="@+id/ratingName"
         android:text="Hotness of chicks"
@@ -33,7 +43,7 @@
         android:gravity="center"
         android:numStars="5"
         android:rating="1.2"
-        android:isIndicator="true" />
+        android:isIndicator="false" />
     <TextView
         android:id="@+id/ratingName2"
         android:text="Drinks"
@@ -50,7 +60,7 @@
         android:gravity="center"
         android:numStars="5"
         android:rating="1.2"
-        android:isIndicator="true" />
+        android:isIndicator="false" />
     <TextView
         android:id="@+id/ratingName2"
         android:text="Music"
@@ -67,7 +77,7 @@
         android:gravity="center"
         android:numStars="5"
         android:rating="1.2"
-        android:isIndicator="true" />
+        android:isIndicator="false" />
     <Button
         android:layout_width="120dp"
         android:layout_height="wrap_content"

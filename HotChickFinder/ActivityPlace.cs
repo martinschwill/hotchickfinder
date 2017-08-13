@@ -31,17 +31,27 @@ namespace HotChickFinder
 			var place = myList.myPlaces.Find((SinglePlace obj) => obj.Address.Contains(i));
 
 
-			//set the values of fields in view from the place 
-			TextView nameView = FindViewById<TextView>(Resource.Id.nameTextView);
+            //set the values of fields in view from the place 
+            TextView nameView = FindViewById<TextView>(Resource.Id.nameTextView);
+            TextView descrView = FindViewById<TextView>(Resource.Id.descrTextView); 
 			RatingBar ratingBarChicks = FindViewById<RatingBar>(Resource.Id.ratingBarChicks);
 			RatingBar ratingBarDrinks = FindViewById<RatingBar>(Resource.Id.ratingBarDrinks);
 			RatingBar ratingBarMusic = FindViewById<RatingBar>(Resource.Id.ratingBarMusic);
 			Button rateButton = FindViewById<Button>(Resource.Id.RateButton); 
 
 			nameView.Text = place.Name;
+            descrView.Text = place.Description; 
             ratingBarChicks.Rating = place.GetRankChicks();
             ratingBarDrinks.Rating = place.GetRankAlcohol();
             ratingBarMusic.Rating = place.GetRankMusic(); 
+
+            rateButton.Click += delegate {
+
+
+
+
+
+            };
 		}
 	}
 }
