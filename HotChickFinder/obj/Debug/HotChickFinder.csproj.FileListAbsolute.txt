@@ -24,6 +24,7 @@
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/Geolocator.Plugin.xml
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/SQLite-net.dll.mdb
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/bin/Debug/SQLite-net.xml
+/Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/HotChickFinder.csprojResolveAssemblyReference.cache
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/HotChickFinder.csproj.CoreCompileInputs.cache
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/HotChickFinder.dll
 /Users/mschwill/Projects/HotChickFinder/HotChickFinder/obj/Debug/HotChickFinder.pdb

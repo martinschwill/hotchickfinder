@@ -61,10 +61,40 @@ namespace HotChickFinder
 
 		}
 
-        public void UpdateMDataTable()
+        public void UpdateMDataTable(int serialNo, float chickRank, float alcRank, float musicRank)
         {
-            // update of DataTable code to update the DataBase 
-        }
+            MySqlConnection con = new MySqlConnection(connection);
+            MySqlCommand mySqlCmd = new MySqlCommand(getDataQuery);
+            mySqlCmd.Connection = con; 
+            MySqlDataAdapter adapter = new MySqlDataAdapter(mySqlCmd);
+            MySqlCommandBuilder myCB = new MySqlCommandBuilder(adapter);
+            adapter.UpdateCommand = myCB.GetUpdateCommand();
+
+            this.myPlaces[serialNo - 1].RankChcickSum += chickRank;
+            this.myPlaces[serialNo - 1].RankAlcoholSum += alcRank;
+            this.myPlaces[serialNo - 1].RankMusicSum += musicRank;
+            this.myPlaces[serialNo - 1].RankCount++;
+
+
+            this.mDataTable.Rows[serialNo - 1]["RANK_CHICK_SUM"] = this.myPlaces[serialNo - 1].RankChcickSum.ToString();
+            this.mDataTable.Rows[serialNo - 1]["RANK_ALC_SUM"] = this.myPlaces[serialNo - 1].RankAlcoholSum.ToString(); 
+            this.mDataTable.Rows[serialNo - 1]["RANK_MUSIC_SUM"] = this.myPlaces[serialNo - 1].RankMusicSum.ToString();
+            this.mDataTable.Rows[serialNo - 1]["RANK_COUNT"] = this.myPlaces[serialNo - 1].RankCount; 
+
+            adapter.Update(mDataTable); 
+
+
+            myPlaces.Clear();
+
+            foreach (DataRow row in mDataTable.Rows)
+            {
+                myPlaces.Add(new SinglePlace((int)row["SERIAL_NO"], row["NAME"].ToString(), new LatLng((double)row["POS_LAT"], (double)row["POS_LNG"]), row["ADDRESS"].ToString(),
+                                             row["DESCR"].ToString(), (float)row["RANK_CHICK_SUM"], (float)row["RANK_ALC_SUM"],
+                                             (float)row["RANK_MUSIC_SUM"], (int)row["RANK_COUNT"]));
+            }
+
+				con.Dispose(); 
+		}
 
 		
 	}

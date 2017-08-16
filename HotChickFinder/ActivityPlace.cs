@@ -47,9 +47,9 @@ namespace HotChickFinder
 
             rateButton.Click += delegate {
 
+                myList.UpdateMDataTable(place.SerialNo, ratingBarChicks.Rating, ratingBarDrinks.Rating, ratingBarMusic.Rating); 
 
-
-
+                Toast.MakeText(this, "Your rating has been added!", ToastLength.Short).Show();
 
             };
 		}
