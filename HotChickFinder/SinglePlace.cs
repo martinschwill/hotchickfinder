@@ -15,10 +15,11 @@ namespace HotChickFinder
 		public float RankAlcoholSum { get; set; }
 		public float RankMusicSum { get; set; }
 		public int RankCount { get; set; }
+        public String imageUrl { get; set; }
 
 
 
-		public SinglePlace(int serial, string name, LatLng pos, string address, string descr, float rankChickSum, float rankAlcoholSum, float rankMusicSum, int rankCount)
+		public SinglePlace(int serial, string name, LatLng pos, string address, string descr, float rankChickSum, float rankAlcoholSum, float rankMusicSum, int rankCount, String url)
 		{
 			SerialNo = serial; 
 			Name = name;
@@ -28,8 +29,8 @@ namespace HotChickFinder
             RankChcickSum = rankChickSum;
             RankAlcoholSum = rankAlcoholSum;
             RankMusicSum = rankMusicSum;
-            RankCount = rankCount; 
-
+            RankCount = rankCount;
+            imageUrl = url; 
 		}
 
 		public SinglePlace() { }

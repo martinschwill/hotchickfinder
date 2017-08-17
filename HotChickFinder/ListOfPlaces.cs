@@ -43,7 +43,7 @@ namespace HotChickFinder
                     foreach(DataRow row in mDataTable.Rows){
                         myPlaces.Add(new SinglePlace((int)row["SERIAL_NO"], row["NAME"].ToString(), new LatLng((double)row["POS_LAT"], (double)row["POS_LNG"]), row["ADDRESS"].ToString(),
                                                      row["DESCR"].ToString(), (float)row["RANK_CHICK_SUM"], (float)row["RANK_ALC_SUM"],
-                                                     (float)row["RANK_MUSIC_SUM"], (int)row["RANK_COUNT"])); 
+                                                     (float)row["RANK_MUSIC_SUM"], (int)row["RANK_COUNT"], row["IMAGE"].ToString())); 
                     }
 
 				}
@@ -88,10 +88,10 @@ namespace HotChickFinder
 
             foreach (DataRow row in mDataTable.Rows)
             {
-                myPlaces.Add(new SinglePlace((int)row["SERIAL_NO"], row["NAME"].ToString(), new LatLng((double)row["POS_LAT"], (double)row["POS_LNG"]), row["ADDRESS"].ToString(),
-                                             row["DESCR"].ToString(), (float)row["RANK_CHICK_SUM"], (float)row["RANK_ALC_SUM"],
-                                             (float)row["RANK_MUSIC_SUM"], (int)row["RANK_COUNT"]));
-            }
+				myPlaces.Add(new SinglePlace((int)row["SERIAL_NO"], row["NAME"].ToString(), new LatLng((double)row["POS_LAT"], (double)row["POS_LNG"]), row["ADDRESS"].ToString(),
+													 row["DESCR"].ToString(), (float)row["RANK_CHICK_SUM"], (float)row["RANK_ALC_SUM"],
+													 (float)row["RANK_MUSIC_SUM"], (int)row["RANK_COUNT"], row["IMAGE"].ToString()));
+			}
 
 				con.Dispose(); 
 		}
